@@ -1,14 +1,14 @@
 # Tổng quát
 
-<img src="../_resources/simplenetwork-1.png" alt="simplenetwork.png" width="554" height="369" class="jop-noMdConv">
+<img src="../_resources/simplenetwork.png" alt="simplenetwork.png" width="554" height="369" class="jop-noMdConv">
 
 ## 1\. Network protocol (giao thức mạng) là gì?
 
 Tất cả các hoạt động giao tiếp trên Internet đều được quản lý bởi protocol.
 
-> Giao thức xác định định dạng, thứ tự  
-> của tin nhắn được gửi và nhận  
-> giữa các thực thể mạng và hành động  
+> Giao thức xác định định dạng, thứ tự
+> của tin nhắn được gửi và nhận
+> giữa các thực thể mạng và hành động
 > được thực hiện khi truyền, nhận tin nhắn.
 
 ## 2\. Mô hình tổng quát của mạng máy tính
@@ -22,30 +22,30 @@ Tất cả các hoạt động giao tiếp trên Internet đều được quản
 ### 2.1.1 Network edge: connection-oriented service
 
 - #### Handshaking (bắt tay ba bước):
-    
+
     - SYN: Synchronize (đồng bộ)
     - ACK: Acknowledge (xác nhận)
 
-<img src="../_resources/3wayhandshaking-1.jpg" alt="3wayhandshaking.jpg" width="468" height="351" class="jop-noMdConv">
+<img src="../_resources/3wayhandshaking.jpg" alt="3wayhandshaking.jpg" width="468" height="351" class="jop-noMdConv">
 
 - #### TCP service \[RFC 793\]
-    
+
     - **Đáng tin cậy**, truyền dữ liệu theo luồng byte theo thứ tự
         - Khi mất dữ liệu sẽ: xác nhận và truyền lại (Acknowledgements and retransmissions)
     - **Flow control**: bên gửi sẽ không vượt quá bên nhận, đảm bảo rằng bên nhận sẽ không bị quá tải dữ liệu.
     - **Congestion control**: là một cơ chế giới hạn luồng gói tin tại mỗi nút của mạng. Có thể hiểu bên gửi sẽ giảm tốc độ gửi khi phát hiện tắt nghẽn mạng.
     - > 👉 An toàn hơn, dữ liệu được đảm bảo nguyên vẹn nhưng chậm hơn
-        
+
 
 ### 2.1.2 Network edge: connectionless service
 
 - #### UDP service \[RFC 768\]
-    
+
     - Truyền dữ liệu **không đáng tin cậy**
     - **không** có kiểm soát luồng (flow control)
     - **không** có kiểm soát tắt nghẽn (congestion control)
     - > 👉 Nhanh hơn nhưng không an toàn, khả năng mất mát dữ liệu cao
-        
+
 
 ### 2.1.3 Một số ứng dụng và giao thức được sử dụng
 
@@ -67,7 +67,7 @@ Tất cả các hoạt động giao tiếp trên Internet đều được quản
 - Connection-oriented (hướng kết nối): Thiết lập một kết nối trước khi giao tiếp
 - Một khi kết nối được thiết lập, kênh sẽ được giữ cho phiên giao tiếp, nghĩa là không có thiết bị nào khác được phép giao tiếp trên kênh này. Đến khi phiên kết thúc, kênh sẽ được nhường cho thiết bị khác.
 - > 👉 Chất lượng tốt hơn và ổn định hơn rất nhiều nhưng kém linh hoạt (không thể truyền nhiều loại dữ liệu, không sử dụng hiệu quả băng thông do băng thông cố được cố định)
-    
+
 
 ### 2.2.2 Network core: packet switching
 
@@ -109,11 +109,11 @@ Thực hiện kết nối mạng ngoại biên (network edge) vào mạng:
 
 # 1\. Mô hình OSI (Open Systems Interconnection)
 
-<img src="../_resources/osimodel-1.png" alt="osimodel.png" width="474" height="375" class="jop-noMdConv">
+<img src="../_resources/osimodel.png" alt="osimodel.png" width="474" height="375" class="jop-noMdConv">
 
 ## 1.1 Dòng dữ liệu trong mô hình OSI:
 
-<img src="../_resources/encapsulation-1.png" alt="encapsulation.png" width="505" height="288" class="jop-noMdConv">
+<img src="../_resources/encapsulation.png" alt="encapsulation.png" width="505" height="288" class="jop-noMdConv">
 
 - **Application:** Ứng dụng tạo ra dữ liệu.
 - **Presentation:** Dữ liệu được định dạng và mã hóa.
@@ -123,7 +123,7 @@ Thực hiện kết nối mạng ngoại biên (network edge) vào mạng:
 - **Data Link:** Các gói tin được đóng khung và gửi đến thiết bị tiếp theo.
 - **Physical:** Khung được chuyển đổi thành bit và truyền đi theo cách vật lý.
 
-<img src="../_resources/dataflowinosi-1.png" alt="dataflowinosi.png" width="620" height="407" class="jop-noMdConv">
+<img src="../_resources/dataflowinosi.png" alt="dataflowinosi.png" width="620" height="407" class="jop-noMdConv">
 
 ## 1.2 Các lớp của mô hình OSI (7 lớp)
 
@@ -201,11 +201,11 @@ Thực hiện kết nối mạng ngoại biên (network edge) vào mạng:
 
 # 2\. Mô hình TCP/IP
 
-<img src="../_resources/tcpipmodel-1.png" alt="tcpipmodel.png" width="635" height="485" class="jop-noMdConv">
+<img src="../_resources/tcpipmodel.png" alt="tcpipmodel.png" width="635" height="485" class="jop-noMdConv">
 
 ## 2.1 Các lớp của mô hình TCP/IP
 
-<img src="../_resources/tcpiplayerdetail-1.jpeg" alt="tcpiplayerdetail.jpeg" width="557" height="467" class="jop-noMdConv"> <img src="../_resources/commonportofprotocol-1.jpg" alt="commonportofprotocol.jpg" width="554" height="312" class="jop-noMdConv">
+<img src="../_resources/tcpiplayerdetail.jpeg" alt="tcpiplayerdetail.jpeg" width="557" height="467" class="jop-noMdConv"> <img src="../_resources/commonportofprotocol.jpg" alt="commonportofprotocol.jpg" width="554" height="312" class="jop-noMdConv">
 
 ### 2.1.1 Application (Lớp ứng dụng)
 
