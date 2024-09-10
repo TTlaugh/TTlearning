@@ -6,9 +6,9 @@
 
 Tất cả các hoạt động giao tiếp trên Internet đều được quản lý bởi protocol.
 
-> Giao thức xác định định dạng, thứ tự
-> của tin nhắn được gửi và nhận
-> giữa các thực thể mạng và hành động
+> Giao thức xác định định dạng, thứ tự  
+> của tin nhắn được gửi và nhận  
+> giữa các thực thể mạng và hành động  
 > được thực hiện khi truyền, nhận tin nhắn.
 
 ## 2\. Mô hình tổng quát của mạng máy tính
@@ -22,28 +22,30 @@ Tất cả các hoạt động giao tiếp trên Internet đều được quản
 ### 2.1.1 Network edge: connection-oriented service
 
 - #### Handshaking (bắt tay ba bước):
-
+    
     - SYN: Synchronize (đồng bộ)
     - ACK: Acknowledge (xác nhận)
-        <img src="../_resources/3wayhandshaking.jpg" alt="3wayhandshaking.jpg" width="468" height="351" class="jop-noMdConv">
-- #### TCP service \[RFC 793\]
 
+<img src="../_resources/3wayhandshaking.jpg" alt="3wayhandshaking.jpg" width="468" height="351" class="jop-noMdConv">
+		
+- #### TCP service \[RFC 793\]
+    
     - **Đáng tin cậy**, truyền dữ liệu theo luồng byte theo thứ tự
         - Khi mất dữ liệu sẽ: xác nhận và truyền lại (Acknowledgements and retransmissions)
     - **Flow control**: bên gửi sẽ không vượt quá bên nhận, đảm bảo rằng bên nhận sẽ không bị quá tải dữ liệu.
     - **Congestion control**: là một cơ chế giới hạn luồng gói tin tại mỗi nút của mạng. Có thể hiểu bên gửi sẽ giảm tốc độ gửi khi phát hiện tắt nghẽn mạng.
     - > 👉 An toàn hơn, dữ liệu được đảm bảo nguyên vẹn nhưng chậm hơn
-
+        
 
 ### 2.1.2 Network edge: connectionless service
 
 - #### UDP service \[RFC 768\]
-
+    
     - Truyền dữ liệu **không đáng tin cậy**
     - **không** có kiểm soát luồng (flow control)
     - **không** có kiểm soát tắt nghẽn (congestion control)
     - > 👉 Nhanh hơn nhưng không an toàn, khả năng mất mát dữ liệu cao
-
+        
 
 ### 2.1.3 Một số ứng dụng và giao thức được sử dụng
 
@@ -65,7 +67,7 @@ Tất cả các hoạt động giao tiếp trên Internet đều được quản
 - Connection-oriented (hướng kết nối): Thiết lập một kết nối trước khi giao tiếp
 - Một khi kết nối được thiết lập, kênh sẽ được giữ cho phiên giao tiếp, nghĩa là không có thiết bị nào khác được phép giao tiếp trên kênh này. Đến khi phiên kết thúc, kênh sẽ được nhường cho thiết bị khác.
 - > 👉 Chất lượng tốt hơn và ổn định hơn rất nhiều nhưng kém linh hoạt (không thể truyền nhiều loại dữ liệu, không sử dụng hiệu quả băng thông do băng thông cố được cố định)
-
+    
 
 ### 2.2.2 Network core: packet switching
 
