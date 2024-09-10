@@ -1,15 +1,6 @@
----
-title: Basic knowledge
-updated: 2024-09-10 09:23:03Z
-created: 2024-09-06 02:08:29Z
-latitude: 10.77492560
-longitude: 106.68593060
-altitude: 0.0000
----
-
 # Tổng quát
 
-<img src="../_resources/simplenetwork-1.png" alt="simplenetwork.png" width="554" height="369" class="jop-noMdConv">
+<img src="../_resources/simplenetwork-2.png" alt="simplenetwork.png" width="554" height="369" class="jop-noMdConv">
 
 ## 1\. Network protocol (giao thức mạng) là gì?
 
@@ -34,7 +25,7 @@ Tất cả các hoạt động giao tiếp trên Internet đều được quản
     
     - SYN: Synchronize (đồng bộ)
     - ACK: Acknowledge (xác nhận)  
-        <img src="../_resources/3wayhandshaking-1.jpg" alt="3wayhandshaking.jpg" width="468" height="351" class="jop-noMdConv">
+        <img src="../_resources/3wayhandshaking-2.jpg" alt="3wayhandshaking.jpg" width="468" height="351" class="jop-noMdConv">
 - #### TCP service \[RFC 793\]
     
     - **Đáng tin cậy**, truyền dữ liệu theo luồng byte theo thứ tự
@@ -116,11 +107,11 @@ Thực hiện kết nối mạng ngoại biên (network edge) vào mạng:
 
 # 1\. Mô hình OSI (Open Systems Interconnection)
 
-<img src="../_resources/osimodel-1.png" alt="osimodel.png" width="474" height="375" class="jop-noMdConv">
+<img src="../_resources/osimodel-2.png" alt="osimodel.png" width="474" height="375" class="jop-noMdConv">
 
 ## 1.1 Dòng dữ liệu trong mô hình OSI:
 
-<img src="../_resources/encapsulation-1.png" alt="encapsulation.png" width="505" height="288" class="jop-noMdConv">
+<img src="../_resources/encapsulation-2.png" alt="encapsulation.png" width="505" height="288" class="jop-noMdConv">
 
 - **Application:** Ứng dụng tạo ra dữ liệu.
 - **Presentation:** Dữ liệu được định dạng và mã hóa.
@@ -129,6 +120,8 @@ Thực hiện kết nối mạng ngoại biên (network edge) vào mạng:
 - **Network:** Các phân đoạn được đóng gói thành các gói và được định tuyến.
 - **Data Link:** Các gói tin được đóng khung và gửi đến thiết bị tiếp theo.
 - **Physical:** Khung được chuyển đổi thành bit và truyền đi theo cách vật lý.
+
+![dataflowinosi.png](../_resources/dataflowinosi.png)
 
 ## 1.2 Các lớp của mô hình OSI (7 lớp)
 
@@ -206,11 +199,11 @@ Thực hiện kết nối mạng ngoại biên (network edge) vào mạng:
 
 # 2\. Mô hình TCP/IP
 
-<img src="../_resources/tcpipmodel-1.png" alt="tcpipmodel.png" width="635" height="485" class="jop-noMdConv">
+<img src="../_resources/tcpipmodel-2.png" alt="tcpipmodel.png" width="635" height="485" class="jop-noMdConv">
 
 ## 2.1 Các lớp của mô hình TCP/IP
 
-<img src="../_resources/tcpiplayerdetail-1.jpeg" alt="tcpiplayerdetail.jpeg" width="557" height="467" class="jop-noMdConv"> <img src="../_resources/commonportofprotocol-1.jpg" alt="commonportofprotocol.jpg" width="554" height="312" class="jop-noMdConv">
+<img src="../_resources/tcpiplayerdetail-2.jpeg" alt="tcpiplayerdetail.jpeg" width="557" height="467" class="jop-noMdConv"> <img src="../_resources/commonportofprotocol-2.jpg" alt="commonportofprotocol.jpg" width="554" height="312" class="jop-noMdConv">
 
 ### 2.1.1 Application (Lớp ứng dụng)
 
